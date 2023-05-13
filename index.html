@@ -26,11 +26,30 @@
             <br>
             <button type="button" id="btnEnviar">Enviar al server</button><br><br>
             <input type="button" id="btnMostrarDatos" name="btnEnviar" value="montrar info del objeto">
+        </form>
+        <br>
+        <hr>
+        <form action="" method="get" class="form-control">
+            <label for="nombreLibro">Ingrese Nombre Libro:</label><br>
+            <input type="text" id="nombreLibro" name="nombreLibro"><br>
+
+            <label for="autorLibro">Ingrese Autor Libro:</label><br>
+            <input type="text" id="autorLibro" name="autorLibro"><br>
+
+            <label for="editorial">Ingrese Editorial Libro</label><br>
+            <input type="text" id="editorial" name="editorial"><br>
+
+            <label for="textPag">Ingrese Cantidad de Paginas:</label><br>
+            <input type="tel" id="txtPag" name="textPag"pattern="[0-9]{2}-[0-9]{1}-[0-9]{8}" placeholder="+569-96525569" ><br>
+            <br>
+            <button type="button" id="btnEnviarL">Enviar al server</button><br><br>
+            <input type="button" id="btnMostrarDatosLibro" name="btnEnviarLibro" value="montrar info del Libro">
         </form><br>
         <div class="form-control">
             <h1>Datos Ingresados son:</h1>
             <p id="parrafoSaludo"></p>
             <p id="parrafoContacto"></p>
+            <p id="parrafoLibro"></p>
         </div>
     </div>
     <script src="assets/js/script.js"></script>
